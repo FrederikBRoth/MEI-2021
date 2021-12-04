@@ -3,23 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package TestPackage;
-import org.jhotdraw.samples.svg.figures.SVGTextFigure;
+package UnitTests;
+import org.jhotdraw.samples.svg.figures.SVGTextAreaFigure;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-public class SVGTextFigureTests {
+public class SVGTextAreaFigureTests {
   @Test
   public void defaultFontSize() {
     float defaultFont = 12.0F;
-    SVGTextFigure textFigure = new SVGTextFigure();
+    SVGTextAreaFigure textFigure = new SVGTextAreaFigure();
     float sum = textFigure.getFontSize();
     assertEquals(defaultFont, sum, 0.0002);
   }
   @Test
   public void changeFontSize(){
     float defaultFont = 12.0F;
-    SVGTextFigure textFigure = new SVGTextFigure();
+    SVGTextAreaFigure textFigure = new SVGTextAreaFigure();
     float size = textFigure.getFontSize();
     assertEquals(defaultFont, size, 0.0002);
     textFigure.setFontSize(20);

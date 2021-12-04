@@ -47,6 +47,13 @@
             <version>1.0.0-RC6</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-guava</artifactId>
+  <!-- use 2.0.1 for Java 7 projects -->
+            <version>3.4.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     <description>-javaagent:C:\Users\fredd\.m2\repository\org\aspectj\aspectjweaver\1.8.6\aspectjweaver-1.8.6.jar</description>
 </project>
