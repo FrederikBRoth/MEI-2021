@@ -299,6 +299,7 @@ public class SVGTextFigure
     @FeatureEntryPoint("Font size Tool")
     public void setFontSize(float size) {
         // FONT_SIZE.basicSet(this, new Double(size));
+        System.out.println("fucker");
         Point2D.Double p = new Point2D.Double(0, size);
         AffineTransform tx =  TRANSFORM.get(this);
         if (tx != null) {

@@ -38,6 +38,7 @@ public abstract class SVGAttributedFigure extends AbstractAttributedFigure {
     
     /** Creates a new instance. */
     public SVGAttributedFigure() {
+        System.out.println("tester2");
     }
     
     public void draw(Graphics2D g)  {

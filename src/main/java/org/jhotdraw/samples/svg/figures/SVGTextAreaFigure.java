@@ -54,7 +54,8 @@ public class SVGTextAreaFigure extends SVGText
 
     /** Creates a new instance. */
     public SVGTextAreaFigure() {
-        this("Text");
+        this("lol");
+        System.out.println("pls");
     }
 
     @FeatureEntryPoint(JHotDrawFeatures.TEXT_AREA_TOOL)
@@ -432,31 +433,14 @@ public class SVGTextAreaFigure extends SVGText
     }
 
     public void setFontSize(float size) {
-//        Double result = super.setFontSize(size, TRANSFORM.get(this));
-//        if(result != 0){
-//            FONT_SIZE.set(this, Math.abs(result));
-//        }
+        System.out.println("test");
+        super.setFontSize(size, TRANSFORM.get(this), FONT_SIZE, this);
         
     }
     
 
     public float getFontSize() {
-//        Point2D.Double p = new Point2D.Double(0, FONT_SIZE.get(this));
-//        AffineTransform tx = TRANSFORM.get(this);
-//        if (tx != null) {
-//            tx.transform(p, p);
-//            Point2D.Double p0 = new Point2D.Double(0, 0);
-//            tx.transform(p0, p0);
-//            p.y -= p0.y;
-//        /*
-//        try {
-//        tx.inverseTransform(p, p);
-//        } catch (NoninvertibleTransformException ex) {
-//        ex.printStackTrace();
-//        }*/
-//        }
-//        return (float) Math.abs(p.y);
-         return (float) 0;
+        return super.getFontSize(TRANSFORM.get(this), FONT_SIZE, this);
     }
 // EDITING
 
