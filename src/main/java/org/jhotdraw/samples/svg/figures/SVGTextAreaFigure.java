@@ -433,7 +433,6 @@ public class SVGTextAreaFigure extends SVGText
     }
 
     public void setFontSize(float size) {
-        System.out.println("test");
         super.setFontSize(size, TRANSFORM.get(this), FONT_SIZE, this);    
     }
     
