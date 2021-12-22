@@ -13,7 +13,7 @@ import org.junit.Test;
  * @author fredd
  */
 
-public class ChangeFontAcceptance extends ScenarioTest<GivenSomeTextArea, WhenChangeFont, ThenFontSizeIs>{
+public class ChangeFontAcceptanceTest extends ScenarioTest<GivenSomeTextArea, WhenChangeFont, ThenFontSizeIs>{
     
     @Test
     public void change_font_size() {

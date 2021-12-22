@@ -8,7 +8,7 @@ import org.jhotdraw.samples.svg.figures.SVGTextAreaFigure;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-public class SVGTextAreaFigureTests {
+public class SVGTextAreaFigureTest {
   @Test
   public void defaultFontSize() {
     float defaultFont = 12.0F;
